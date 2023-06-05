@@ -34,9 +34,13 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 ##### Configs ######
 
 service docker restart
+
 sudo usermod -aG docker $USER
+
 newgrp docker
+
 sudo chmod 666 /var/run/docker.sock
+
 sudo systemctl restart docker 
 
 
